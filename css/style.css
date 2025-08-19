@@ -23,6 +23,25 @@ a {
     text-decoration: none;
 }
 
+.justify-space-between {
+    justify-content: space-between;
+    align-items: center;
+}
+
+.d-flex {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.pos-relative {
+    position: relative;
+}
+
+.pos-absolute {
+    position: absolute;
+}
+
+
 .tradex-interface {
     position: fixed;
     width: 100%;
@@ -486,8 +505,8 @@ button {
 .options a.active {
     font-weight: bold;
     color: var(--primary-color);
-  }
-  
+}
+
 .work-section .options a {
     padding: 5px 10px;
     color: #a1a1a1;
@@ -544,7 +563,7 @@ button {
     bottom: 15px;
     left: 50%;
     transform: translateX(-50%);
-    transform-origin:center;
+    transform-origin: center;
     width: 100%;
     height: 70px;
     background: rgba(33, 129, 197, 0.95);
@@ -557,8 +576,9 @@ button {
     transition: transform 0.5s ease, opacity 0.5s ease;
     opacity: 0;
 }
+
 .work-section .card:hover .hidden-content {
-    opacity: 1;  
+    opacity: 1;
 }
 
 .work-section .hidden-content h6 {
@@ -572,4 +592,292 @@ button {
     margin: 0;
     font-size: 1.1rem;
     font-weight: bold;
+}
+
+.news-section {
+    margin: 50px 0px 0px 0px;
+    background-image: url('../images/ecommerce-cover-2.jpg');
+    background-size: cover;
+    background-position: center;
+    padding: 60px 20px;
+    text-align: center;
+    height: 100vh;
+}
+
+.subscribe-section {
+    margin: 50px 0px 0px 0px;
+    background-color: rgba(0, 0, 0, 0.9);
+    padding: 60px 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.subscribe-section .subscribe-content {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    /* justify-content: center;  */
+    align-items: center;
+    gap: 10px;
+    color: var(--background-color);
+    padding: 20px;
+}
+
+.subscribe-section .subscribe-content h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.subscribe-section .subscribe-content form {
+    display: flex;
+    gap: 10px;
+}
+
+.subscribe-section .subscribe-content input {
+    padding: 15px;
+    border: none;
+    border-radius: 5px;
+    background-color: var(--background-color);
+    flex: 1;
+    min-width: 400px;
+    box-shadow: 0 2px 5px rgba(37, 97, 171, 0.845);
+}
+
+.subscribe-section .subscribe-content button {
+    padding: 10px;
+    border: none;
+    border-radius: 20px;
+    background-color: var(--primary-color);
+    color: var(--background-color);
+    font-size: 16px;
+}
+
+.team-section {
+    background-color: var(--background-color);
+    padding: 50px 0;
+}
+
+.team-section .section-title {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.team-section .section-title p {
+    max-width: 600px;
+    margin: 10px auto;
+    color: #9a9a9a;
+}
+
+.team-section .container {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.team-section .card {
+    flex: 1 1 calc(33.333% - 20px);
+    max-width: 350px;
+    background: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    text-align: center;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.team-section .card:hover {
+    transform: translateY(-10px);
+}
+
+.team-section .card img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.team-section .content {
+    padding: 20px;
+}
+
+.team-section .content h3 {
+    margin: 10px 0 5px;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.team-section .content p {
+    margin: 5px 0;
+    color: #555;
+}
+
+.team-section .content p:first-of-type {
+    color: var(--primary-color);
+    font-weight: 600;
+}
+
+.team-section .social-links {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 15px;
+    background-color: var(--primary-color);
+    padding: 10px;
+    border-radius: 0 0 10px 10px;
+}
+
+.team-section .social-links a {
+    color: #fff;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+}
+
+.team-section .social-links a:hover {
+    color: #000;
+}
+
+
+
+
+.card {
+    position: relative;
+    width: 300px;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.card-img img {
+    width: 100%;
+    display: block;
+}
+
+.card-content {
+    position: absolute;
+    bottom: -100%;
+    left: 0;
+    width: 100%;
+    background: white;
+    padding: 20px;
+    transition: bottom 0.5s ease;
+}
+
+.card:hover .card-content {
+    bottom: 0;
+}
+
+.footer {
+    background: #3f3f3f;
+    color: #fff;
+    padding: 50px 0 20px;
+}
+
+.footer .container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.footer-flex {
+    flex: 1;
+    min-width: 250px;
+}
+
+.footer-flex h3 {
+    font-size: 22px;
+    margin-bottom: 15px;
+    position: relative;
+}
+
+.footer-flex h3::after {
+    content: '';
+    display: block;
+    width: 50px;
+    height: 2px;
+    background: var(--primary-color);
+    margin-top: 8px;
+}
+
+.footer-flex ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-flex ul li {
+    margin-bottom: 12px;
+    font-size: 15px;
+}
+
+.footer-flex ul li i {
+    margin-right: 10px;
+    color: var(--primary-color);
+}
+
+.post {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+    border-bottom: 1px solid var(--background-color);
+    padding-bottom: 10px;
+}
+
+.post img {
+    width: 60px;
+    height: 60px;
+    border-radius: 5px;
+    margin-right: 10px;
+    object-fit: cover;
+}
+
+.post-info p {
+    font-size: 14px;
+    margin: 0 0 5px;
+}
+
+.post-info small {
+    font-size: 12px;
+    color: #bbb;
+}
+
+.post-info small i {
+    margin-right: 5px;
+    color: var(--primary-color);
+}
+
+.tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.tags span {
+    background: var(--background-color);
+    color: #000;
+    font-size: 14px;
+    padding: 5px 12px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.tags span:hover {
+    background: var(--primary-color);
+    color: #fff;
+}
+
+.footer-bottom {
+    text-align: center;
+    padding-top: 20px;
+    border-top: 1px solid #333;
+    margin-top: 30px;
+    font-size: 14px;
+}
+
+.footer-bottom span {
+    color: #007bff;
 }
