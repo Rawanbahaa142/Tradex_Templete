@@ -1,12 +1,14 @@
-@media (max-width: 992px) {
-    .team-section .card {
+@media (max-width: 768px) {
+  .scroll-to-top {
+    display: block;
+  }
+   .team-section .card {
       flex: 1 1 calc(50% - 20px);
     }
-  }
-  
-  @media (max-width: 768px) {
-    .team-section .card {
+     .team-section .card {
       flex: 1 1 100%;
     }
-  }
+    
+}
+
   
