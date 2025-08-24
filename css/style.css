@@ -40,7 +40,8 @@ a {
 .pos-absolute {
   position: absolute;
 }
-        /* Scroll to Top Button */
+
+/* Scroll to Top Button */
 
 .scroll-to-top {
   position: fixed;
@@ -53,6 +54,7 @@ a {
   cursor: pointer;
   z-index: 1000;
   display: none;
+
   & .scroll-to-top i {
     font-size: 16px;
     color: var(--background-color);
@@ -100,6 +102,50 @@ a {
 }
 
 /* End Title Style====== */
+
+/* From Uiverse.io by Mike11jr */
+.btn {
+  padding: 1.1em 2em;
+  background: none;
+  border: 2px solid #fff;
+  font-size: 15px;
+  color: #131313;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  transition: all 0.3s;
+  border-radius: 12px;
+  background-color: var(--primary-color);
+  font-weight: bolder;
+  box-shadow: 0 2px 0 2px #ddd;
+}
+
+.btn:before {
+  content: "";
+  position: absolute;
+  width: 100px;
+  height: 120%;
+  background-color: transparent;
+  top: 50%;
+  transform: skewX(30deg) translate(-150%, -50%);
+  transition: all 0.5s;
+}
+
+.btn:hover {
+  background-color: var(--background-color);
+  color: var(--primary-color);
+  box-shadow: 0 2px 0 2px var(--primary-color);
+}
+
+.btn:hover::before {
+  transform: skewX(30deg) translate(150%, -50%);
+  transition-delay: 0.1s;
+}
+
+.btn:active {
+  transform: scale(0.9);
+}
+
 .top-header {
   background: var(--primary-color);
   color: var(--background-color);
@@ -204,9 +250,22 @@ a {
   display: flex;
 }
 
-.interface {
+/* Interface Style Slider----=*/
+/* .interface .single-item .content-1 {
   background: linear-gradient(to bottom, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.7)),
     url("../images/slider1.jpg") no-repeat center center/cover;
+  background-size: cover;
+  background-position: center;
+  padding: 150px 50px 20px;
+  height: 100vh;
+  position: relative;
+  color: var(--text-color);
+  text-align: center;
+  overflow: hidden;
+}  */
+
+ .interface .single-item .slide {
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.7));
   background-size: cover;
   background-position: center;
   padding: 150px 50px 20px;
@@ -243,6 +302,98 @@ a {
   margin-right: auto;
 }
 
+.slider-section {
+  width: 100%;
+  height: 200vh;
+  overflow: hidden;
+}
+
+.slider {
+  width: 100%;
+  height: 100%;
+}
+
+
+.slide {
+  width: 100%;
+  height: 200vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  color: #fff;
+  text-align: center;
+}
+
+.interface .coverEcommerce {
+    background-image: url("../images/ecommerce-cover-2.jpg");
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+}
+
+.slide-content {
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.7)),
+    url("../images/slider1.jpg") no-repeat center center/cover;
+  background-size: cover;
+  background-position: center;
+  padding: 150px 50px 20px;
+    height: 200vh;
+    position: relative;
+    color: var(--text-color);
+    text-align: center;
+    overflow: hidden;
+}
+
+.slide-content h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+
+.slide-content p {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+  line-height: 1.6;
+}
+
+.slide-content .btn {
+  padding: 12px 30px;
+  margin: 0 10px;
+  border: none;
+  cursor: pointer;
+  border-radius: 30px;
+  font-size: 1rem;
+  transition: 0.3s ease;
+}
+
+.btn:hover {
+  opacity: 0.85;
+}
+
+/* ====== Overlay ====== */
+.slide::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.4);
+  z-index: 1;
+}
+
+/* ====== Slick Customization ====== */
+.slick-dots li button:before {
+  color: #fff;
+  font-size: 12px;
+}
+.slick-prev:before,
+.slick-next:before {
+  color: #fff;
+  font-size: 30px;
+}
 .get-started {
   font-size: 20px;
   padding: 12px 30px;
@@ -265,6 +416,8 @@ a {
   margin: 0 10px;
 }
 
+
+
 .main-section {
   position: relative;
   gap: 20px;
@@ -281,21 +434,19 @@ a {
 
 .main-section .container {
   display: flex;
-  justify-content: space-between;
+  justify-content: end;
   align-items: center;
   position: relative;
 }
-
 .left-square {
-  /* position: absolute; */
-  /* top: 50px; 
-    left: 320px; */
-  width: 20%;
-  padding: 20px;
-  background-color: var(--background-color);
-  border-radius: 5px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  z-index: 10;
+  position: absolute;
+    width: 20%;
+    padding: 20px;
+    background-color: var(--background-color);
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    z-index: 10;
+    left: 17%;
 }
 
 .icon {
@@ -320,7 +471,7 @@ a {
 
 .center-image img {
   width: 300px;
-  height: auto;
+  height: 400px;
   /* z-index: 1;
     position: relative; */
 }
@@ -332,13 +483,14 @@ a {
   /* border-radius: 5px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); */
   color: var(--text-color);
+    font-size: 15px;
 }
 
 .counter-section {
   display: flex;
   justify-content: space-around;
-  max-width: 1200px;
-  margin: 50px auto;
+  width:100%;
+  /* margin: 50px auto; */
   padding: 20px;
   background-color: #fff;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -375,28 +527,32 @@ a {
   text-align: center;
   padding: 20px;
 }
-
-.counter i {
-  font-size: 20px;
-  color: var(--primary-color);
-  margin-bottom: 10px;
-  border: 2px solid #e9e7e7;
+.counter span:first-of-type{
   background-color: #fff;
-  padding: 10px;
+  padding: 5px 5px;
+  width: fit-content;
   border-radius: 5px;
-}
 
-.counter span {
+  
+}
+.counter i {
+  color: var(--primary-color);
+}
+.counter span:last-of-type{
+  display: block;
+  margin-top:15px;
+}
+/* .counter span {
   display: block;
   font-size: 18px;
   color: var(--text-color);
-}
+} */
 
-.counter span:first-child {
+/* .counter span:first-child {
   font-weight: bold;
   font-size: 24px;
   color: var(--text-color);
-}
+} */
 
 .services {
   background: linear-gradient(to bottom, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.8)),
@@ -569,26 +725,27 @@ button {
 
 .work-section .hidden-content {
   position: absolute;
-  bottom: 15px;
-  left: 50%;
-  transform: translateX(-50%);
-  transform-origin: center;
+  bottom: 0;
+  left: 0;
   width: 100%;
   height: 70px;
-  background: rgba(33, 129, 197, 0.95);
+  background: rgba(33, 129, 197, 0.9);
   color: var(--background-color);
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  border-radius: 8px;
-  transition: transform 0.5s ease, opacity 0.5s ease;
+  border-radius: 0 0 8px 8px;
   opacity: 0;
+  pointer-events: none;
 }
 
 .work-section .card:hover .hidden-content {
   opacity: 1;
+  pointer-events: auto;
+  animation: backInLeft 0.8s ease forwards; /* من Animate.css */
 }
+
 
 .work-section .hidden-content h6 {
   margin: 0 0 4px;
@@ -661,103 +818,11 @@ button {
   color: var(--background-color);
   font-size: 16px;
 }
+/* ---=sTART Team Style---= */
 
-.team-section {
-  background-color: var(--background-color);
-  padding: 50px 0;
-}
-
-.team-section .section-title {
-  text-align: center;
-  margin-bottom: 40px;
-}
-
-.team-section .section-title p {
-  max-width: 600px;
-  margin: 10px auto;
-  color: #9a9a9a;
-}
-
-.team-section .container {
-  width: 80%;
-  margin: 0 auto;
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 20px;
-}
-
-.team-section .card {
-  flex: 1 1 calc(33.333% - 20px);
-  max-width: 350px;
-  background: #fff;
-  border-radius: 10px;
-  overflow: hidden;
-  text-align: center;
-  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
-  cursor: pointer;
-  transition: transform 0.3s ease;
-}
-
-.team-section .card:hover {
-  transform: translateY(-10px);
-}
-
-.team-section .card img {
-  width: 100%;
-  height: auto;
-  display: block;
-}
-
-.team-section .content {
-  padding: 20px;
-}
-
-.team-section .content h3 {
-  margin: 10px 0 5px;
-  font-size: 1.2rem;
-  font-weight: bold;
-}
-
-.team-section .content p {
-  margin: 5px 0;
-  color: #555;
-}
-
-.team-section .content p:first-of-type {
-  color: var(--primary-color);
-  font-weight: 600;
-}
-
-.team-section .social-links {
-  display: flex;
-  justify-content: center;
-  gap: 10px;
-  margin-top: 15px;
-  background-color: var(--primary-color);
-  padding: 10px;
-  border-radius: 0 0 10px 10px;
-}
-
-.team-section .social-links a {
-  color: #fff;
-  font-size: 1rem;
-  transition: color 0.3s ease;
-}
-
-.team-section .social-links a:hover {
-  color: #000;
-}
-
-.card {
-  position: relative;
-  width: 300px;
-  overflow: hidden;
-  border-radius: 10px;
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
-}
-
-.card-img img {
+/* ---=End Team Style---= */
+ 
+/* .card-img img {
   width: 100%;
   display: block;
 }
@@ -767,19 +832,207 @@ button {
   bottom: -100%;
   left: 0;
   width: 100%;
-  background: white;
+  background: transparent;
   padding: 20px;
   transition: bottom 0.5s ease;
 }
 
 .card:hover .card-content {
   bottom: 0;
+} */
+
+/* Start Testimonial Section */
+/* .testimonial-section {
+  padding: 20px;
+  text-align: center;
+  background: #f9f9f9;
+  overflow: hidden;
+}
+.testimonial-title {
+  font-size: 24px;
+  margin-bottom: 20px;
+  position: relative;
+}
+.testimonial-title::before,
+.testimonial-title::after {
+  content: "——";
+  color: #007bff;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.testimonial-title::before {
+  left: 0;
+}
+.testimonial-title::after {
+  right: 0;
+}
+.testimonial-container {
+  display: flex;
+  gap: 20px;
+  width: 500%; 
+  animation: scroll 20s linear infinite; 
+}
+.testimonial-card {
+  flex: 0 0 20%; 
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 20px;
+  text-align: left;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+.testimonial-card img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+.testimonial-card h3 {
+  margin: 0 0 5px;
+  color: #333;
+}
+.testimonial-card p {
+  margin: 0;
+  color: #666;
+  font-size: 14px;
+}
+.controls {
+  margin-top: 20px;
+}
+.btn {
+  background: #007bff;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  margin: 0 5px;
+}
+.btn:disabled {
+  background: #ccc;
+  cursor: not-allowed;
+}
+@keyframes scroll {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-20%); }
+} 
+/* End Testimonial Section */
+.clients-section {
+  text-align: center;
+  padding: 40px 20px;
+  background: #fff;
+  position: relative;
+  /* max-width: 1200px; */
+
 }
 
-.footer {
-  background: #3f3f3f;
+.clients-title {
+  font-size: 32px;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.clients-title::after {
+  content: "——";
+  color: var(--primary-color);
+  position: absolute;
+  right: -50px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.clients-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+.person-image img {
+  width: 20%;
+  height: 20%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow effect */
+  border-radius: 5px;
+}
+
+.clients-logos img {
+  width: 30%;
+  /* height: 30%; */
+  object-fit: cover;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 10px;
+  background: #fff;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.call-to-action {
+  background: var(--primary-color);
   color: #fff;
-  padding: 50px 0 20px;
+  padding: 20px;
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+
+}
+
+.call-to-action p {
+  /* margin: 0; */
+  font-size: 18px;
+}
+
+.call-to-action .btn {
+  padding: 1.1em 2em;
+  background: none;
+  border: 2px solid #fff;
+  font-size: 15px;
+  color: var(--background-color);
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  transition: all 0.3s;
+  border-radius: 22px;
+  background-color: var(--primary-color);
+  font-weight: bolder;
+  box-shadow: 0 2px 0 2px #ddd;
+}
+
+.call-to-action .btn:before {
+  content: "";
+  position: absolute;
+  width: 100px;
+  height: 120%;
+  background-color: transparent;
+  top: 50%;
+  transform: skewX(30deg) translate(-150%, -50%);
+  transition: all 0.5s;
+}
+
+.call-to-action .btn:hover {
+  background-color: var(--background-color);
+  color: var(--primary-color);
+  box-shadow: 0 2px 0 2px var(--primary-color);
+}
+
+.call-to-action .btn:hover::before {
+  transform: skewX(30deg) translate(150%, -50%);
+  transition-delay: 0.1s;
+}
+
+.call-to-action .btn:active {
+  transform: scale(0.9);
+}
+
+
+
+.footer {
+  background: #272727;
+  color: #fff;
+  padding:3%;
 }
 
 .footer .container {
@@ -885,5 +1138,5 @@ button {
 }
 
 .footer-bottom span {
-  color: #007bff;
+  color: var(--primary-color);
 }

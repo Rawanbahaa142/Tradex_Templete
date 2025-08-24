@@ -8,15 +8,31 @@
     <link rel="stylesheet" href="css/all.min.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/media.css">
+    <link rel="stylesheet" href="css/animation.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <link rel="stylesheet" type="text/css"
+        href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
 
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <!-- Slick JS -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <link rel="stylesheet" type="text/css"
+        href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 
 </head>
+
 
 <body>
     Arrow To Scroll To Top
     <div class="scroll-to-top" id="scrollDiv">
-      <a href="#"> <i class="fa-solid fa-chevron-up"></i>
+        <a href="#"> <i class="fa-solid fa-chevron-up"></i>
         </a>
     </div>
     <div class="tradex-interface">
@@ -62,17 +78,41 @@
                 <li><a href="#">SERVICES</a></li>
                 <li><a href="#">FEATURES</a></li>
                 <li><a href="#">PAGES</a></li>
-                <li><a href="#">CONTACT</a></li>
+                <li><a href="contact.html">CONTACT</a></li>
             </ul>
         </nav>
     </div>
     <!-- interfaceBackGround Image=== -->
-    <div class="interface">
-        <h1>What You Do Today For Peoples</h1>
-        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Hic error vero aspernatur aut corrupti! Dolore.</p>
-        <button class="btn get-started">Get Start Now</button>
-        <button class="btn contact-us">Contact Us</button>
+
+    <div class="interface single-item">
+
+        <div class="slide-content">
+            <h1>What You Do Today For Peoples</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore.</p>
+            <button class="btn get-started">Get Start Now</button>
+            <button class="btn contact-us">Contact Us</button>
+        </div>
+        <div class="slide coverEcommerce">
+
+        </div>
+        <div class="slide-content">
+            <h1>Grow Your Business</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            <button class="btn btn-primary">Explore</button>
+            <button class="btn btn-outline">Contact</button>
+        </div>
+        <div class="slide coverEcommerce">
+
+        </div>
+        <div class="slide-content">
+            <h1>Grow Your Business</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            <button class="btn btn-primary">Explore</button>
+            <button class="btn btn-outline">Contact</button>
+        </div>
     </div>
+
+
 
     <!-- About Us Section=== -->
     <section class="main-section">
@@ -88,7 +128,7 @@
                 <div class="icon"><i class="fas fa-bolt"></i> Quick & Powerful</div>
             </div>
             <div class="center-image">
-                <img src="./images/about.webp" alt="Team Image">
+                <img src="./images/aboutsection.jpg" alt="Team Image">
             </div>
             <div class="right-text">
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut blandit nisi dictum tristique. Nullam
@@ -101,19 +141,21 @@
                 <br>
                 <p>Sed ut perspiciatis. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis.</p>
 
-                <button class="learn-more">Learn More</button>
+                <button class="btn learn-more">Learn More</button>
             </div>
         </div>
     </section>
 
     <div class="counter-section">
-        <div class="counter"><i class="fa-solid fa-desktop"></i> 8000 Total Projects</div>
-        <div class="counter"><i class="fa-solid fa-trophy"></i> 810 Won Awards</div>
-        <div class="counter"><i class="fa-regular fa-face-smile"></i> 2000 Happy Clients</div>
-        <div class="counter"><i class="fa-regular fa-calendar"></i> 20 Years Experience</div>
+        <div class="counter">
+            <span><i class="fa-solid fa-desktop"></i></span> 
+            <span>8000 Total Projects</span></div>
+        <div class="counter"><span><i class="fa-solid fa-trophy"></i></span> <span>810 Won Awards</span></div>
+        <div class="counter"><span><i class="fa-regular fa-face-smile"></i></span><span>2000 Happy Clients</span></div>
+        <div class="counter"><span><i class="fa-regular fa-calendar"></i></span><span>20 Years Experience</span></div>
     </div>
 
-
+    <!-- service=== -->
     <section class="services">
         <div class="section-title">
             <h2>Our Services</h2>
@@ -127,7 +169,7 @@
                     <i class="fa-solid fa-shop d-icon"></i>
                     <h3>Online Marketing</h3>
                     <div class="hidden-content">
-                        <h4>Online Marketing</h4>
+                        <!-- <h4>Online Marketing</h4> -->
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga sequi vitae, ab deserunt quis
                             alias rerum. Culpa quasi minima obcaecati, fugiat cum accusantium nemo incidunt.</p>
                         <button>Read More</button>
@@ -137,7 +179,7 @@
                     <i class="fas fa-laptop d-icon"></i>
                     <h3>Web Design</h3>
                     <div class="hidden-content">
-                        <h4>Web Design</h4>
+                        <!-- <h4>Web Design</h4> -->
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga sequi vitae, ab deserunt quis
                             alias rerum. Culpa quasi minima obcaecati, fugiat cum accusantium nemo incidunt.</p>
                         <button>Read More</button>
@@ -147,7 +189,7 @@
                     <i class="fa-solid fa-pencil d-icon"></i>
                     <h3>Graphic Design</h3>
                     <div class="hidden-content">
-                        <h4>Graphic Design</h4>
+                        <!-- <h4>Graphic Design</h4> -->
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga sequi vitae, ab deserunt quis
                             alias rerum. Culpa quasi minima obcaecati, fugiat cum accusantium nemo incidunt.</p>
                         <button>Read More</button>
@@ -157,7 +199,7 @@
                     <i class="fa-solid fa-code d-icon"></i>
                     <h3>Web Development</h3>
                     <div class="hidden-content">
-                        <h4>Web Development</h4>
+                        <!-- <h4>Web Development</h4> -->
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga sequi vitae, ab deserunt quis
                             alias rerum. Culpa quasi minima obcaecati, fugiat cum accusantium nemo incidunt.</p>
                         <button>Read More</button>
@@ -167,7 +209,7 @@
                     <i class="fa-solid fa-people-line d-icon"></i>
                     <h3>Networking</h3>
                     <div class="hidden-content">
-                        <h4>Networking</h4>
+                        <!-- <h4>Networking</h4> -->
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga sequi vitae, ab deserunt quis
                             alias rerum. Culpa quasi minima obcaecati, fugiat cum accusantium nemo incidunt.</p>
                         <button>Read More</button>
@@ -177,7 +219,7 @@
                     <i class="fa-brands fa-wordpress d-icon"></i>
                     <h3>Wordpress Theme</h3>
                     <div class="hidden-content">
-                        <h4>Wordpress Theme</h4>
+                        <!-- <h4>Wordpress Theme</h4> -->
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga sequi vitae, ab deserunt quis
                             alias rerum. Culpa quasi minima obcaecati, fugiat cum accusantium nemo incidunt.</p>
                         <button>Read More</button>
@@ -186,7 +228,7 @@
             </div>
         </div>
     </section>
-
+    <!-- ---= Work Section=== -->
     <section class="work-section">
         <div class="section-title">
             <h2>Our Work</h2>
@@ -210,7 +252,7 @@
                 </div>
                 <div class="card" data-category="Web Design">
                     <img src="./images/port2-370x390.jpg" alt="Work 1">
-                    <div class="hidden-content">
+                    <div class="hidden-content ">
                         <h6>Web Design</h6>
                         <p>Project Title</p>
 
@@ -266,61 +308,42 @@
 
     </section>
 
-    <section class="team-section">
-        <div class="section-title">
-            <h2>Our Creative Team</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur repudiandae maiores ipsam delectus
-                debitis quasi dolorem, doloremque ratione laudantium molestias!</p>
-        </div>
-        <div class="container">
-            <div class="card pos-relative">
-                <img src="./images/images/PERSON1.jpg" alt="" />
-                <div class="content">
-                    <h3>Jen Whyan</h3>
-                    <p>Founder</p>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
-                    <div class="social-links">
-                        <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
-                        <a href="#"><i class="fa-brands fa-twitter"></i></a>
-                        <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
-                        <a href="#"><i class="fa-brands fa-google-plus-g"></i></a>
-                    </div>
-                </div>
-            </div>
 
-            <div class="card pos-relative">
-                <img src="./images/images/Person2.jpeg" alt="" />
-                <div class="content">
-                    <h3>Jen Whyan</h3>
-                    <p>Founder</p>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
-                    <div class="social-links">
-                        <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
-                        <a href="#"><i class="fa-brands fa-twitter"></i></a>
-                        <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
-                        <a href="#"><i class="fa-brands fa-google-plus-g"></i></a>
-                    </div>
-                </div>
-            </div>
+    <!-- ---==   Start Tream Creative Section =----- -->
 
-            <div class="card pos-relative">
-                <div class="card-img">
-                    <img src="./images/images/person3.jpeg" alt="" />
-                </div>
-                <div class="card-content">
-                    <h3>Jen Whyan</h3>
-                    <p>Founder</p>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
-                    <div class="social-links">
-                        <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
-                        <a href="#"><i class="fa-brands fa-twitter"></i></a>
-                        <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
-                        <a href="#"><i class="fa-brands fa-google-plus-g"></i></a>
-                    </div>
-                </div>
+
+
+
+    <!-- ---==   End Tream Creative Section =----- -->
+
+    <!-- ---==   Start Testimonial Section =----- -->
+
+    <!-- End Testimonial Section -->
+
+    <section class="clients-section">
+     <div class="section-title">
+        <h2>Meet Our Clients</h2>
+     </div>
+        <div class="clients-content">
+            <div class="person-image">
+                <img src="./images/Adobe Express - file.png" alt="Person Image">
+            </div>
+            <div class="clients-logos">
+                <img src="./images/partner-g1.png" alt="Outdoors Adventures">
+                <img src="./images/partner-g1.png" alt="Outdoors Adventures">
+                <img src="./images/partner-g1.png" alt="Outdoors Adventures">
+                <img src="./images/partner-g1.png" alt="Outdoors Adventures">
+                <img src="./images/partner-g1.png" alt="Outdoors Adventures">
+                <img src="./images/partner-g1.png" alt="Outdoors Adventures">
             </div>
         </div>
+
     </section>
+    <div class="call-to-action">
+        <p>If You Like This Grate Work ?? For You Site...</p>
+        <button class="btn">Purchase Now</button>
+    </div>
+
     <footer class="footer">
         <div class="container footer-content">
             <div class="footer-flex">
@@ -372,6 +395,7 @@
     </footer>
 
     <script src="js/script.js"></script>
+
 </body>
 
 </html>
