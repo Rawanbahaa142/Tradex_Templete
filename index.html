@@ -26,6 +26,14 @@
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 
+    <!-- Owl Carousel CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+
+    <!-- FontAwesome for Arrows -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
 </head>
 
 
@@ -116,8 +124,8 @@
 
     <!-- About Us Section=== -->
     <section class="main-section">
-        <div class="section-title">
-            <h2>About Us</h2>
+        <div class="all-title">
+            <h3 class="sec-title"><span>About Us</span></h3>
         </div>
         <div class="container">
 
@@ -148,8 +156,9 @@
 
     <div class="counter-section">
         <div class="counter">
-            <span><i class="fa-solid fa-desktop"></i></span> 
-            <span>8000 Total Projects</span></div>
+            <span><i class="fa-solid fa-desktop"></i></span>
+            <span>8000 Total Projects</span>
+        </div>
         <div class="counter"><span><i class="fa-solid fa-trophy"></i></span> <span>810 Won Awards</span></div>
         <div class="counter"><span><i class="fa-regular fa-face-smile"></i></span><span>2000 Happy Clients</span></div>
         <div class="counter"><span><i class="fa-regular fa-calendar"></i></span><span>20 Years Experience</span></div>
@@ -157,11 +166,10 @@
 
     <!-- service=== -->
     <section class="services">
-        <div class="section-title">
-            <h2>Our Services</h2>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsum accusantium at enim autem distinctio qui
-                nemo quisquam facilis sapiente harum quas, praesentium voluptatibus officia ab error, quae nihil eum
-                recusandae.</p>
+        <div class="all-title">
+            <h3 class="sec-title mb-5" style="color: #fff;"><span>Our Services</span></h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga sequi vitae, ab deserunt quis
+                alias rerum. Culpa quasi minima obcaecati, fugiat cum accusantium nemo incidunt.</p>
         </div>
         <div class="container">
             <div class="cards">
@@ -230,8 +238,8 @@
     </section>
     <!-- ---= Work Section=== -->
     <section class="work-section">
-        <div class="section-title">
-            <h2>Our Work</h2>
+        <div class="all-title">
+            <h3 class="sec-title"><span>Our Work</span></h3>
         </div>
         <div class="options">
             <a href="#" data-filter="all">All <span>/</span></a>
@@ -243,57 +251,54 @@
 
         <div class="container">
             <div class="cards">
-                <div class="card" data-category="Development Graphic">
+                <div class="card" data-category="Graphic">
                     <img src="./images/office-1209640_1920-1-360x380.jpg" alt="Work 1">
                     <div class="hidden-content">
                         <h6>Graphic Design</h6>
                         <p>Project Title</p>
                     </div>
                 </div>
-                <div class="card" data-category="Web Design">
-                    <img src="./images/port2-370x390.jpg" alt="Work 1">
-                    <div class="hidden-content ">
+                <div class="card" data-category="Web">
+                    <img src="./images/office-1209640_1920-1-360x380.jpg" alt="Work 1">
+                    <div class="hidden-content">
                         <h6>Web Design</h6>
                         <p>Project Title</p>
-
                     </div>
                 </div>
-                <div class="card" data-category="Development Graphic">
-                    <img src="./images/port7-370x390.jpg" alt="Work 1">
+                <div class="card" data-category="Development">
+                    <img src="./images/office-1209640_1920-1-360x380.jpg" alt="Work 1">
                     <div class="hidden-content">
-                        <h6>Development, Graphic Design</h6>
+                        <h6>Development</h6>
                         <p>Project Title</p>
-                    </div>
-                </div>
-                <div class="card" data-category="Web Development">
-                    <img src="./images/computer-472016_1920-360x380.jpg" alt="Work 1">
-                    <div class="hidden-content">
-                        <h6>Web Development</h6>
-                        <p>Project Title</p>
-
                     </div>
                 </div>
                 <div class="card" data-category="Marketing">
-                    <img src="./images/office-1209640_1920-1-360x380.jpg" alt="Work 1">
+                    <img src="./images/port2-370x390.jpg" alt="Work 2">
                     <div class="hidden-content">
                         <h6>Marketing</h6>
                         <p>Project Title</p>
-
                     </div>
                 </div>
-                <div class="card" data-category="Networking">
-                    <img src="./images/port2-370x390.jpg" alt="Work 1">
+                <div class="card" data-category="Development">
+                    <img src="./images/computer-472016_1920-360x380.jpg" alt="Work 3">
                     <div class="hidden-content">
-                        <h6>Networking</h6>
+                        <h6>Development</h6>
                         <p>Project Title</p>
-
                     </div>
                 </div>
-
+                <div class="card" data-category="Marketing">
+                    <img src="./images/port7-370x390.jpg" alt="Work 1">
+                    <div class="hidden-content">
+                        <h6>Marketing</h6>
+                        <p>Project Title</p>
+                    </div>
+                </div>
             </div>
         </div>
-
     </section>
+
+
+
     <section class="news-section">
     </section>
     <section class="subscribe-section">
@@ -317,13 +322,65 @@
     <!-- ---==   End Tream Creative Section =----- -->
 
     <!-- ---==   Start Testimonial Section =----- -->
+    <section class="testimonial-section">
+        <div class="container">
+            <div class="all-title">
+                <h3 class="sec-title"><span>Testimonials</span></h3>
+            </div>
+            <div class=" cards">
+                <div class="square-card">
+                    <div class="image">
+                        <img src="./images/images/Person2.jpeg" alt="Person Image">
+                    </div>
+                    <div class="content">
+                        <h4 class="mt-10">Selena Jovall</h4>
+                        <h5 class="job mt-10">Designer</h5>
+                        <p class="mt-10">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odio porro deleniti
+                            temporibus consequuntur cum nulla nostrum beatae ipsa repudiandae delectus! Impedit officia
+                            natus harum commodi.</p>
+                    </div>
 
+                </div>
+                <div class="square-card">
+                    <div class="image">
+                        <img src="./images/images/PERSON1.jpg" alt="Person Image">
+                    </div>
+                    <div class="content">
+                        <h4 class="mt-10">Selena Jovall</h4>
+                        <h5 class="job mt-10">Marketing Manager</h5>
+                        <p class="mt-10">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odio porro deleniti
+                            temporibus consequuntur cum nulla nostrum beatae ipsa repudiandae delectus! Impedit officia
+                            natus harum commodi.</p>
+                    </div>
+
+                </div>
+                <div class="square-card">
+                    <div class="image">
+                        <img src="./images/images/person3.jpeg" alt="Person Image">
+                    </div>
+                    <div class="content">
+                        <h4 class="mt-10">Selena Jovall</h4>
+                        <h5 class="job mt-10">Marketing Manager</h5>
+                        <p class="mt-10">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odio porro deleniti
+                            temporibus consequuntur cum nulla nostrum beatae ipsa repudiandae delectus! Impedit officia
+                            natus harum commodi.</p>
+                    </div>
+
+                </div>
+            </div>
+            <div class="arrow-scroll">
+                <i class="fa-solid fa-angles-left"></i>
+                <i class="fa-solid fa-angles-right"></i>
+            </div>
+
+        </div>
+    </section>
     <!-- End Testimonial Section -->
 
     <section class="clients-section">
-     <div class="section-title">
-        <h2>Meet Our Clients</h2>
-     </div>
+        <div class="all-title">
+            <h3 class="sec-title"><span>Meet Our Clients</span></h3>
+        </div>
         <div class="clients-content">
             <div class="person-image">
                 <img src="./images/Adobe Express - file.png" alt="Person Image">
@@ -343,6 +400,10 @@
         <p>If You Like This Grate Work ?? For You Site...</p>
         <button class="btn">Purchase Now</button>
     </div>
+
+
+
+
 
     <footer class="footer">
         <div class="container footer-content">
@@ -394,7 +455,11 @@
         </div>
     </footer>
 
-    <script src="js/script.js"></script>
+
+    <script src="js/script.js">
+
+    </script>
+   
 
 </body>
 

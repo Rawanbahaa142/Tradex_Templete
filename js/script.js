@@ -1,110 +1,110 @@
 let scrollDiv = document.getElementById("scrollDiv");
 
-if(scrollDiv){
-window.addEventListener("scroll", () => {
-   
-  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-    scrollDiv.style.display = "block";
-  } else {
-    scrollDiv.style.display = "none";
-  }
-});
+if (scrollDiv) {
+  window.addEventListener("scroll", () => {
+
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+      scrollDiv.style.display = "block";
+    } else {
+      scrollDiv.style.display = "none";
+    }
+  });
 }
-if(scrollDiv){
+if (scrollDiv) {
   scrollDiv.addEventListener("click", () => {
     window.scrollTo({
       top: 0,
       behavior: "smooth"
     });
   });
-  }
-  $(document).ready(function(){
-    $('.single-item').slick({
-      slidesToShow: 1,         // عدد السلايد اللي تظهر مرة واحدة
-      slidesToScroll: 1,       // لما تدوس سهم يتحرك قد إيه
-      dots: true,              // نقاط تحت السلايدر
-      arrows: true,            // أسهم للتنقل
-      infinite: true,          // يعمل لوب
-      autoplay: false,         // وقف التشغيل التلقائي
-      speed: 500,              // سرعة الانتقال
-      cssEase: 'ease-in-out'   // شكل الانتقال
-    });
+}
+$(document).ready(function () {
+  $('.single-item').slick({
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    dots: true,
+    arrows: true,
+    infinite: true,
+    autoplay: false,
+    speed: 500,
+    cssEase: 'ease-in-out'
   });
+});
 
 
+//== Filter Work Section===
+const filterLinks = document.querySelectorAll('.options a');
+const cards = document.querySelectorAll('.card');
 
+filterLinks.forEach(link => {
+    link.addEventListener('click', e => {
+        e.preventDefault();
+
+        const filter = link.getAttribute('data-filter');
+
+        cards.forEach(card => {
+            const category = card.getAttribute('data-category') || ""; 
+            // لو مفيش data-category يرجع string فاضي
+
+            if (filter === 'all' || category.includes(filter)) {
+                card.style.display = 'block';
+            } else {
+                card.style.display = 'none';
+            }
+        });
+    });
+});
+
+filterLinks.forEach(link => {
+    link.addEventListener('click', e => {
+        e.preventDefault();
+
+        const filter = link.getAttribute('data-filter');
+
+        cards.forEach(card => {
+            const category = card.getAttribute('data-category');
+
+            if (filter === 'all' || category.includes(filter)) {
+                card.style.display = 'block';
+            } else {
+                card.style.display = 'none';
+            }
+        });
+    });
+});
+
+// $(document).ready(function(){
+//   $(".owl-carousel").owlCarousel({
+//     items: 2,          
+//     margin: 20,        
+//     loop: true,        
+//     nav: true,         
+//     dots: false,       
+//     navText: [
+//       '<i class="fa-solid fa-angle-left"></i>',
+//       '<i class="fa-solid fa-angle-right"></i>'
+//     ],
+//     responsive:{
+//       0:{ items:1 },    
+//       768:{ items:2 }   
+//     }
+//   });
+// });
 
 
 // $(document).ready(function(){
-//   $('.single-item').slick({
-//     slidesToShow: 3,
-//     slidesToScroll: 1,
-//     dots: true,
-//     arrows: true,
-//     infinite: true,
-//     autoplay: true,
-//     autoplaySpeed: 2000,
-//     centerMode: false,
-//     responsive: [
-//       {
-//         breakpoint: 768,
-//         settings: {
-//           slidesToShow: 2
-//         }
-//       },
-//       {
-//         breakpoint: 480,
-//         settings: {
-//           slidesToShow: 1
-//         }
-//       }
-//     ]
+//   $(".owl-carousel").owlCarousel({
+//     loop:true,            
+//     margin:20,            
+//     nav:true,             
+//     dots:false,           
+//     autoplay:true,        
+//     autoplayTimeout:3000,   
+//     responsive:{
+//         0:{ items:1 },     
+//         768:{ items:2 },   
+//         1024:{ items:3 }    
+//     },
+//     navText:["<i class='fa-solid fa-angles-left'></i>","<i class='fa-solid fa-angles-right'></i>"]
 //   });
 // });
-////////////////////////////////////////
-
-  // -===ContactUs JS====
-//   let myform = document.getElementById("myForm");
-// myform.addEventListener('submit', function (e) {
-//     e.preventDefault();
-
-//   // let userMessage = document.getElementById("userMessage");
-//   let handleError = (input, msg = "") => {
-//     input.nextElementSibling.innerText = msg;
-//     return msg === ""; 
-// }
-// let userName = document.getElementById("userName");
-// let userEmail = document.getElementById("userEmail");
-// let userPassword = document.getElementById("userPassword");
-
-// let nameValidation = (element) => {
-//     let inputValue = element.value.trim();
-//     if (inputValue.length < 3) {
-//         return handleError(element, "Please enter at least 3 characters");
-//     }
-//     return handleError(element);
-// }
-// let userEmail = document.getElementById("userEmail");
-
-// let emailValidation = (element) => {
-//     let inputValue = element.value.trim();
-//     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-//     if (!emailRegex.test(inputValue)) {
-//         return handleError(element, "Please enter a valid email");
-//     }
-//     return handleError(element);
-// }
-
-// let userPassword = document.getElementById("userPassword");
-
-// let passwordValidation = (element) => {
-//     let inputValue = element.value;
-//     var strongRegex = /^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#\$%\^&\*])(?=.{8,})/;
-//     if (!strongRegex.test(inputValue)) {
-//         return handleError(
-//             element,
-//             "Please enter at least 1 lowercase, 1 uppercase, 1 number, 1 special character"
-//         );
-//     }
-//     return handleError(element);
-//   }
