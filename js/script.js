@@ -73,6 +73,26 @@ filterLinks.forEach(link => {
     });
 });
 
+
+$(document).ready(function(){
+  $('.testimonial-slider').slick({
+    slidesToShow: 2,
+    slidesToScroll: 1,
+    autoplay: false,
+    arrows: true,
+    dots: false,
+    responsive: [
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 1
+        }
+      }
+    ]
+  });
+});
+
+
 // $(document).ready(function(){
 //   $(".owl-carousel").owlCarousel({
 //     items: 2,          
