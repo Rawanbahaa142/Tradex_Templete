@@ -6,80 +6,234 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact US</title>
     <link rel="stylesheet" href="css/all.min.css">
-    <link rel="stylesheet" href="css/contact.css">
+
     <link rel="stylesheet" href="css/media.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/contact.css">
 
 </head>
 
 <body>
-    <div class="contact">
-        <div class="tradex-interface">
-            <div class="top-header">
-                <div class="left">
-                    <a href="#"><i class="fa-solid fa-location-dot"></i> 267 Park Avenue New York, NY 90210</a>
-                </div>
-                <div class="right">
-                    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
-                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
-                    <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
-                    <a href="#"><i class="fa-brands fa-google-plus-g"></i></a>
-                    <a href="#"><i class="fa-solid fa-envelope"></i> Quick Email</a>
-                    <a href="#"><i class="fa-solid fa-phone"></i> +1 (409) 987-5874</a>
-                </div>
+    <div class="colors-switch">
+        <i class="fa-solid fa-gear theme-toggle" data-action="prev"></i>
+        <i class="fa-solid fa-gears theme-toggle" data-action="next"></i>
+    </div>
+
+    <div class="tradex-interface">
+        <div class="top-header">
+            <div class="left">
+                <a href="#"><i class="fa-solid fa-location-dot"></i> 267 Park Avenue New York, NY 90210</a>
             </div>
-            <nav class="navbar">
-                <div class="logo">
-                    <img src="./images/Trade-X-Logo.png" alt="Tradex Logo">
-                </div>
-                <ul class="nav-links">
-                    <li class="dropdown"><a href="./index.html">HOME</a>
-                        <ul class="dropdown-menu">
-                            <li><a href="#">Home 1</a></li>
-                            <li><a href="#">Home 2</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="#">ABOUT</a></li>
-                    <li class="dropdown"><a href="#">HEADERS</a>
-                        <ul class="dropdown-menu">
-                            <li><a href="#">Header 1</a></li>
-                            <li><a href="#">Header 2</a></li>
-                        </ul>
-                    </li>
-                    <li class="dropdown"><a href="#">BLOG POST</a>
-                        <ul class="dropdown-menu">
-                            <li><a href="#">Blog Grid</a></li>
-                            <li><a href="#">Blog Masonary</a></li>
-                            <li><a href="#">Classic</a></li>
-                            <li><a href="#">Blog Detail</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="#">SERVICES</a></li>
-                    <li><a href="#">FEATURES</a></li>
-                    <li><a href="#">PAGES</a></li>
-                    <li><a href="contact.html">CONTACT</a></li>
-                </ul>
+            <div class="right">
+                <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href="#"><i class="fa-brands fa-google-plus-g"></i></a>
+                <a href="#"><i class="fa-solid fa-envelope"></i> Quick Email</a>
+                <a href="#"><i class="fa-solid fa-phone"></i> +1 (409) 987-5874</a>
+            </div>
+        </div>
+        <nav class="navbar">
+            <div class="logo">
+                <img src="./images/Trade-X-Logo.png" alt="Tradex Logo">
+            </div>
+            <!-- <i class="fa-solid fa-bars" id="menu-icon"></i> -->
+            <ul class="nav-links">
+                <li class="dropdown"><a href="./index.html">HOME</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">Home 1</a></li>
+                        <li><a href="#">Home 2</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">ABOUT</a></li>
+                <li class="dropdown"><a href="#">HEADERS</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">Header 1</a></li>
+                        <li><a href="#">Header 2</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown"><a href="#">BLOG POST</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">Blog Grid</a></li>
+                        <li><a href="#">Blog Masonary</a></li>
+                        <li><a href="#">Classic</a></li>
+                        <li><a href="#">Blog Detail</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">SERVICES</a></li>
+                <li><a href="#">FEATURES</a></li>
+                <li><a href="#">PAGES</a></li>
+                <li><a href="contact.html">CONTACT</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <div class="colors-setting d-flex">
+
+        <div class="color-container">
+          <div>Color Skin</div>
+          <div class="colors d-flex">
+            <div class="color-blue" onclick="setTheme('#0c65ed')"></div>
+            <div class="color-green" onclick="setTheme('#28a745')"></div>
+            <div class="color-orange" onclick="setTheme('#c15e0c')"></div>
+            <div class="color-lightBlue" onclick="setTheme('#0fb8cd')"></div>
+            <div class="color-purple" onclick="setTheme('#5d17da')"></div>
+            <div class="color-pink" onclick="setTheme('#fc3d6a')"></div>
+            <div class="color-brawn" onclick="setTheme('brown')"></div>
+            <div class="color-beige" onclick="setTheme('rgb(161, 161, 32)')"></div>
+          </div>
+        </div>
+    
+    
+        <div class="color-lock">
+          <i class="fas fa-cog"></i>
+          <i class="fas fa-cog"></i>
+          <i class="fas fa-cog"></i>
+        </div>
+      </div>
+      
+      <section class="contact-banner">
+        <div class="layout d-flex">
+            <h3>Contact</h3>
+            <div>
+                <span><a href="index.html">Home</a></span>
+                <span><i class="fas fa-chevron-right    "></i></span>
+                <span><a href="contact.html">Contact</a></span>
+            </div>
+        </div>
+      </section>
+       
+
+    <section class="contact-section">
+        <div class="container">
+            <h1>Contact</h1>
+            <nav class="links">
+                <a href="#home">Home</a> <span>></span> <a href="#contact">Contact</a>
             </nav>
         </div>
-        <div class="container">
-            <div class="section-title">
-                <h2>Contact Us</h2>
+    </section>
+
+    <div class="contact-info">
+        <div class="all-title">
+            <h3 class="sec-title"><span>Contact Info</span></h3>
+        </div>
+        <div class="card-icons">
+            <div class="card-icon">
+                <i class="fas fa-map-marker-alt"></i>
+                <h3>Address</h3>
+                <p>123, Street Name, New York, NY 02110</p>
+            </div>
+            <div class="card-icon">
+                <i class="fas fa-phone"></i>
+                <h3>Phone</h3>
+                <p>Phone: +1 (888) 123-4567</p>
+            </div>
+            <div class="card-icon">
+                <i class="fas fa-envelope"></i>
+                <h3>Email</h3>
+                <p>Email: support@company.com</p>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="Getintouch">
+        <div class="all-title">
+            <h3 class="sec-title"><span>Get In Touch</span></h3>
+        </div>
+        
+      <div class="contact-form">
+        <form class="d-flex">
+          <div>
+            <i class="fas fa-user"></i>
+            <input type="text" placeholder="Name" name="user-name" id="userName">
+            <p></p>
+          </div>
+      
+          <div>
+            <i class="fas fa-envelope"></i>
+            <input type="text" placeholder="Email" name="user-mail" id="userEmail">
+            <p></p>
+          </div>
+      
+          <div>
+            <i class="fa-solid fa-lock"></i>
+            <input type="password" placeholder="password" name="user-password" id="userPassword">
+            <p></p>
+          </div>
+      
+          <div>
+            <i class="fa fa-pencil"></i>
+            <textarea name="user-message" placeholder="Your Message" rows="10" id="usermsg"></textarea>
+            <p></p>
+          </div>
+      
+          <button class="about-btn" type="submit">
+            <span class="btn-text">Send Message</span>
+            <span class="skew-btn"></span>
+          </button>
+        </form>
+      
+             </div>
+      
+              </div>
+    </div>
+
+    <div class="call-to-action">
+        <p>If You Like This Grate Work ?? For You Site...</p>
+        <button class="btn">Purchase Now</button>
+    </div>
+    <footer class="footer">
+        <div class="container footer-content">
+            <div class="footer-flex">
+                <h3>Contact Info</h3>
+                <ul>
+                    <li><i class="fa-solid fa-location-dot"></i> 123 Street Market, Life Plaza, New York</li>
+                    <li><i class="fa-solid fa-phone"></i> 987654321</li>
+                    <li><i class="fa-solid fa-envelope"></i> rwan@gmail.com</li>
+                </ul>
             </div>
 
-            <form id="myForm">
-                <label>Username:</label>
-                <input type="text" id="username" name="username">
-                <div class="error" id="userError">Username must be at least 3 characters</div>
 
-                <label>Password:</label>
-                <input type="password" id="password" name="password">
-                <div class="error" id="passError">Password must be at least 6 characters</div>
+            <div class="footer-flex">
+                <h3>Posts</h3>
+                <div class="post">
+                    <img src="./images/service-bg.jpg" alt="">
+                    <div class="post-info">
+                        <p>Lorem ipsum dolor Lorem ipsum dolor sit., error!</p>
+                        <small><i class="fa-regular fa-calendar"></i> December 19, 2018</small>
+                    </div>
+                </div>
+                <div class="post">
+                    <img src="./images/background_Interface.webp" alt="">
+                    <div class="post-info">
+                        <p>Lorem ipsum dolor Lorem ipsum dolor sit., error!</p>
+                        <small><i class="fa-regular fa-calendar"></i> December 19, 2018</small>
+                    </div>
+                </div>
+            </div>
 
-                <button type="submit">Submit</button>
-            </form>
+            <div class="footer-flex">
+                <h3>Popular</h3>
+                <div class="tags">
+                    <span>Accountancy</span>
+                    <span>Affiliate</span>
+                    <span>Branding</span>
+                    <span>Construction</span>
+                    <span>Design</span>
+                    <span>Transform</span>
+                    <span>Website</span>
+                    <span>Wordpress</span>
+                </div>
+            </div>
         </div>
-    </div>
+
+        <div class="footer-bottom">
+            <p>© 2019 Developed By <span>DTM Theme</span></p>
+        </div>
+    </footer>
+    
 
     <script src="js/script.js"></script>
 </body>

@@ -1,4 +1,21 @@
 @media (max-width: 768px) {
+  .tradex-interface .top-header {
+   display: none;
+  }
+ 
+  .navbar .nav-links {
+    display: none;
+  }
+  .navbar .menu-icon {
+    display: block;
+    font-size: 30px;
+    cursor: pointer;
+
+  }
+
+
+
+  
   .scroll-to-top {
     display: block;
   }
@@ -9,6 +26,106 @@
       flex: 1 1 100%;
     }
     
+}
+@media (max-width: 768px) {
+  .interface .single-item .slide,
+  .slide-content {
+      height: 100vh; 
+      padding: 100px 20px 20px; 
+  }
+
+  .interface h1 {
+      font-size: 40px; 
+      margin-bottom: 20px;
+  }
+
+  .interface p,
+  .slide-content p {
+      font-size: 16px; 
+      margin-bottom: 20px;
+      max-width: 100%; 
+  }
+
+  .slide-content .btn,
+  .get-started,
+  .contact-us {
+      font-size: 16px; 
+      padding: 10px 20px; 
+      margin: 0 5px; 
+  }
+
+  .buttons {
+      flex-direction: column; 
+      gap: 10px; 
+  }
+
+  .interface .coverEcommerce {
+      background-position: center; 
+  }
+
+  .slick-dots li button:before {
+      font-size: 10px; 
+  }
+
+  .slick-prev:before,
+  .slick-next:before {
+      font-size: 20px; /* Smaller arrows */
+  }
+}
+
+/* Small devices (mobile, 576px and up) */
+@media (max-width: 576px) {
+  .interface .single-item .slide,
+  .slide-content {
+      height: 80vh; 
+      padding: 60px 15px 15px; 
+      margin: 0 15px;
+      
+  }
+
+  .interface h1 {
+      font-size: 30px; 
+      margin-bottom: 15px;
+  }
+
+  .interface p,
+  .slide-content p {
+      font-size: 14px; /* Smaller paragraph size */
+      margin-bottom: 15px;
+  }
+
+  .slide-content .btn,
+  .get-started,
+  .contact-us {
+      font-size: 14px; /* Smaller button text */
+      padding: 8px 15px; /* Smaller button padding */
+      margin: 0 5px;
+      width: 100%; /* Full width buttons */
+      margin-bottom: 10px; /* Space between buttons */
+  }
+
+  .buttons {
+      flex-direction: column; /* Ensure vertical stack */
+      gap: 5px; /* Minimal gap */
+  }
+
+  .interface .coverEcommerce {
+      background-size: contain; /* Adjust image to fit without cropping */
+      background-position: center;
+  }
+
+  .slick-dots {
+      bottom: 10px; /* Move dots closer to bottom */
+  }
+
+  .slick-dots li button:before {
+      font-size: 8px; /* Even smaller dots */
+  }
+
+  .slick-prev:before,
+  .slick-next:before {
+      font-size: 18px; /* Smaller arrows */
+  }
 }
 
   

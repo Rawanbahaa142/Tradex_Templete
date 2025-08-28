@@ -44,6 +44,9 @@ a {
 .mb-5 {
   margin-bottom: 5px;
 }
+.menu-icon {
+  display: none;
+}
 
 /* Scroll to Top Button */
 
@@ -174,7 +177,10 @@ a {
 .btn:active {
   transform: scale(0.9);
 }
-
+.menu-icon{
+    display: none;
+}
+ /* Custom CSS */
 .top-header {
   background: var(--primary-color);
   color: var(--background-color);
@@ -242,7 +248,6 @@ a {
 .navbar .nav-links a {
   text-decoration: none;
   color: var(--title-color);
-  /* font-weight: bold; */
   padding: 10px 15px;
   transition: 0.3s;
 }
@@ -534,37 +539,36 @@ a {
   cursor: pointer;
 }
 
-.counter-section {
-  display: flex;
+/* counters section */
+
+.counters-container{
+  padding:3% 10%;
   justify-content: space-between;
-  /* max-width: 1200px; */
-  /* margin: 50px 0; */
-  padding: 20px;
-  background-color: #e9e7e7;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  background-color: var(--background-color);
 }
-
-.counter {
-  text-align: center;
-  padding: 20px;
+.counters-container>div{
+  align-items: center;
 }
-
-.counter span:first-of-type {
+.counters-container>div >span{
+  padding:10px;
   background-color: #fff;
-  padding: 5px 5px;
-  width: fit-content;
+  color: var(--main-color);
+  font-size: 25px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.2);
   border-radius: 5px;
-
-
+  margin-right: 10px;
 }
-
-.counter i {
+.counters-container>div >span i{
   color: var(--primary-color);
 }
 
-.counter span:last-of-type {
+.counters-container>div >p span:first-child{
   display: block;
-  margin-top: 15px;
+  font-weight: bold;
+}
+.counters-container>div >p span:last-child{
+  color: grey;
+  font-size: 13px;
 }
 
 /* ===- Services Section Style---= */
